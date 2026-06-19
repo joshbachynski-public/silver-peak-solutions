@@ -1,0 +1,115 @@
+<!-- ============================================================================
+     SECTION BLOCKS — copy any block into a page's <main>, swap the {{TEXT}}.
+     These are the same building pieces the homepage is made of. Mix and match.
+     ============================================================================ -->
+
+
+<!-- ███ BLOCK: HERO (dark, with background photo) ███ -->
+<section class="hero">
+  <div class="container">
+    <div class="hero__content">
+      <div class="hero__badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
+        <span>{{BADGE_TEXT}}</span>
+      </div>
+      <h1 class="hero__title">{{HEADLINE}} <span class="accent">{{HEADLINE_ACCENT}}</span></h1>
+      <p class="hero__sub">{{SUBHEADING}}</p>
+      <div class="btn-row">
+        <a href="tel:2505076439" class="btn btn-primary">Call 250-507-6439</a>
+        <a href="mailto:christianhaug@silver-peak.ca" class="btn btn-glass">Email Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ███ BLOCK: SERVICE CARD GRID (light) ███ -->
+<!-- Duplicate a .card for each item. Swap the icon from the icon library below. -->
+<section id="services" class="section section--bg">
+  <div class="container">
+    <div class="section__head">
+      <h2 class="section__title">{{SECTION_TITLE}}</h2>
+      <p class="section__lead">{{SECTION_LEAD}}</p>
+    </div>
+    <div class="grid-cards">
+
+      <div class="card">
+        <div class="card__icon">{{ICON}}</div>
+        <h3 class="card__title">{{CARD_TITLE}}</h3>
+        <p class="card__desc">{{CARD_DESCRIPTION}}</p>
+      </div>
+
+      <!-- ...repeat .card... -->
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ███ BLOCK: SPLIT (dark text + offset photo) ███ -->
+<section id="about" class="section section--dark">
+  <div class="container">
+    <div class="split">
+      <div>
+        <span class="eyebrow eyebrow--light">{{EYEBROW}}</span>
+        <h2 class="split__title">{{TITLE}}</h2>
+        <p class="split__text">{{PARAGRAPH_ONE}}</p>
+        <p class="split__text">{{PARAGRAPH_TWO}}</p>
+        <ul class="checklist">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.801 10A10 10 0 1 1 17 3.335"/><path d="m9 11 3 3L22 4"/></svg>
+            <span>{{LIST_ITEM}}</span>
+          </li>
+          <!-- ...repeat li... -->
+        </ul>
+      </div>
+      <div class="offset-img">
+        <img src="assets/panel-work.png" alt="{{IMAGE_ALT}}" />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ███ BLOCK: PILL ROW (centered tags) ███ -->
+<section class="section section--bg section--bordered">
+  <div class="container">
+    <div class="section__head section__head--center">
+      <h2 class="section__title">{{TITLE}}</h2>
+      <p class="section__lead">{{LEAD}}</p>
+    </div>
+    <div class="pill-row">
+      <span class="pill">{{TAG}}</span>
+      <!-- ...repeat span.pill... -->
+    </div>
+  </div>
+</section>
+
+
+<!-- ███ BLOCK: CTA (orange band) ███ -->
+<section id="contact" class="section section--primary">
+  <div class="container">
+    <div class="cta">
+      <h2 class="cta__title">{{TITLE}}</h2>
+      <p class="cta__lead">{{LEAD}}</p>
+      <div class="btn-row">
+        <a href="tel:2505076439" class="btn btn-dark">250-507-6439</a>
+        <a href="mailto:christianhaug@silver-peak.ca" class="btn btn-white">christianhaug@silver-peak.ca</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================================
+     ICON LIBRARY — paste any one inside a <div class="card__icon"> ... </div>
+     ============================================================================ -->
+<!-- zap         --><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg>
+<!-- wrench      --><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+<!-- flame       --><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
+<!-- shield      --><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
+<!-- building    --><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg>
+<!-- check-circle--><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.801 10A10 10 0 1 1 17 3.335"/><path d="m9 11 3 3L22 4"/></svg>
+<!-- map-pin     --><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+<!-- mail        --><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+<!-- phone       --><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
