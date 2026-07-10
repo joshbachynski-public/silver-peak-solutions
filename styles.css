@@ -618,6 +618,22 @@ svg { flex-shrink: 0; }
 .article li { margin-bottom: 0.375rem; }
 .article a { color: hsl(var(--primary)); }
 
+/* The article generator emits some paragraphs as bare <div>s and pull-quotes
+   as <blockquote>; the global reset stripped their margins so they rendered
+   glued together. Give them the same rhythm as <p> — HTML stays untouched. */
+.article div {
+  margin: 0 0 1rem;
+  color: hsl(var(--foreground) / 0.85);
+  line-height: 1.7;
+}
+.article blockquote {
+  margin: 1.25rem 0 1.75rem;
+  padding-left: 1.25rem;   /* restore the indent the reset removed */
+}
+.article .table-wrap { margin: 1.25rem 0 1.75rem; }   /* keep table spacing */
+.article .table-wrap div,
+.article blockquote div { margin: 0; }
+
 .table-wrap {
   overflow-x: auto;
   margin: 1.25rem 0 1.75rem;
